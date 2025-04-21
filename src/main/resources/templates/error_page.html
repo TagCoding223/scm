@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::title},~{::#main},~{})}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email Verification Failed</title>
+</head>
+
+<body>
+    <div id="main" class="text-center mt-5 md:w-1/2 mx-auto">
+        <!-- message/alert -->
+        <div data-th-replace="~{message :: alertbox}"></div>
+        <a data-th-href="@{'/login'}"><button class="bg-indigo-700 mt-2 text-gray-100 px-3 py-2 rounded">Login</button></a>
+    </div>
+</body>
+
+</html>

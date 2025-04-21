@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head xmlns:th="http://www.thymeleaf.org">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Email For Account Verification</title>
+</head>
+<body>
+    <h2>Hello <span data-th-text="${name}"></span>,</h2>
+    <p>Welcome to our platform!</p>
+    <p>Your Account Created Successfully, But It Is Still Disabled.</p>
+    <p>To Enable Account Visit The URL: </p><a data-th-href="${emailVerificationLink}">Click here</a>
+    <br/>
+    <br/>
+    <p>Thanks For Choosing Us, <br/> <i>Team SCM</i></p>
+</body>
+</html>

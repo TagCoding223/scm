@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::title},~{::#main},~{})}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+</head>
+
+<body>
+    <div id="main" class="text-black dark:text-white">
+
+        <!-- header -->
+        <section id="header">
+            <div class="flex flex-col items-center justify-center w-full h-52 bg-blue-600 text-white">
+                <h1 class="text-2xl font-extrabold">Welcome to Contact Manager</h1>
+                <p class="px-10 text-center font-medium pb-2 md:py-3">Manage all your contacts effortlessly and secuely
+                    in one place</p>
+                <a href="/register">
+                    <button class="bg-white px-4 py-2 rounded-full text-sm text-black font-semibold">Get
+                        Started</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- features -->
+        <section id="features" class="mt-4">
+            <h2 class="text-center text-3xl font-semibold pt-6 pb-4">Features</h2>
+            <div class="flex flex-col md:flex-row justify-center items-center">
+
+                <!-- card 1 -->
+                <div
+                    class="block max-w-xs md:max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center md:mx-3 my-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                    <i class="fa-solid fa-address-book text-5xl "></i>
+                    <h5 class="my-2 text-2xl md:text-xl font-bold tracking-tight text-gray-900 dark:text-white">Easy
+                        Contact
+                        Management</h5>
+                    <p class="font-normal text-gray-700 dark:text-gray-400">Add, edit and organize your contacts in a
+                        user-friendly interface.</p>
+                </div>
+
+                <!-- card 2 -->
+                <div
+                    class="block max-w-xs md:max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center md:mx-3 my-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                    <i class="fa-solid fa-table-cells-row-lock text-5xl"></i>
+                    <h5 class="my-2 text-2xl md:text-xl font-bold tracking-tight text-gray-900 dark:text-white">Secure
+                        Storage</h5>
+                    <p class="font-normal text-gray-700 dark:text-gray-400">Your contacts is protected with top-level
+                        encryption and security measures.</p>
+                </div>
+
+                <!-- card 3 -->
+                <div
+                    class="block max-w-xs md:max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center md:mx-3 my-2 transition delay-150 duration-300 ease-in-out hover:-translate-y-1 hover:scale-110">
+                    <i class="fa-solid fa-globe text-5xl"></i>
+                    <h5 class="my-2 text-2xl md:text-xl font-bold tracking-tight text-gray-900 dark:text-white">24/7
+                        Access</h5>
+                    <p class="font-normal text-gray-700 dark:text-gray-400">Access your contacts anytime, anywhere from
+                        any device.</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- mid section -->
+        <section id="mid-section" class="mt-6">
+            <div class="flex flex-col items-center justify-center w-full h-52 bg-blue-600 text-white">
+                <h3 class="text-2xl font-extrabold">Ready to Manage Your Contacts?</h3>
+                <p class="px-10 text-center font-medium pb-2 md:py-3">Sign up today and experience the easiest way to
+                    Manage your contacts.</p>
+                <a href="/register">
+                    <button class="bg-white px-4 py-2 rounded-full text-sm text-black font-semibold">Create an
+                        Account</button>
+                </a>
+            </div>
+        </section>
+
+        <!-- feedback section -->
+        <section id="feedback" class="my-10">
+            <h3 class="text-2xl font-extrabold text-center mb-4">What Our Users Say</h3>
+
+            <div id="default-carousel" class="relative w-full" data-carousel="slide">
+
+                <!-- Carousel wrapper -->
+                <div class="relative h-56 overflow-hidden rounded-lg md:h-28">
+                    <!-- Item 1 -->
+                    <div class="hidden duration-[1500ms] ease-in-out absolute translate-x-full dark:bg-gray-900 bg-gray-100"
+                        data-carousel-item>
+
+                        <div class="flex flex-col md:flex-row items-center justify-center h-full px-8">
+
+                            <div
+                                class="w-full md:w-2/5 h-28 rounded md:mr-4 bg-white border border-gray-200 shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center flex flex-col justify-center items-center md:px-6 px-1 mb-3 md:mb-0">
+                                <p class="italic font-medium">"This app has completely transformed the way I manage my
+                                    contacts. Highly recommended!"</p>
+                                <p class="font-semibold">- John Doe</p>
+                            </div>
+
+                            <div
+                                class="w-full md:w-2/5 h-28 rounded md:mr-4 bg-white border border-gray-200 shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center flex flex-col justify-center items-center md:px-6 px-1 mb-3 md:mb-0">
+                                <p class="italic font-medium">"A fantastic tool for organizing my contacts. It's simple,
+                                    secure, and reliable!"</p>
+                                <p class="font-semibold">- Jane Smith</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Item 2 -->
+                    <div class="hidden duration-[1500ms] ease-in-out dark:bg-gray-900 bg-gray-100" data-carousel-item>
+
+                        <div class="flex flex-col md:flex-row items-center justify-center h-full px-8">
+
+                            <div
+                                class="w-full md:w-2/5 h-28 rounded md:mr-4 bg-white border border-gray-200 shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center flex flex-col justify-center items-center md:px-6 px-1 mb-3 md:mb-0">
+                                <p class="italic font-medium">"An amazing app that simplifies contact management. I love
+                                    it!"</p>
+                                <p class="font-semibold">- Alice Johnson</p>
+                            </div>
+
+                            <div
+                                class="w-full md:w-2/5 h-28 rounded md:mr-4 bg-white border border-gray-200 shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center flex flex-col justify-center items-center md:px-6 px-1 mb-3 md:mb-0">
+                                <p class="italic font-medium">"An indispensable app for managing contacts efficiently. I
+                                    can't imagine my life without it!"</p>
+                                <p class="font-semibold">- Michael Brown</p>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Item 3 -->
+                    <div class="hidden duration-[1500ms] ease-in-out dark:bg-gray-900 bg-gray-100" data-carousel-item>
+
+                        <div class="flex flex-col md:flex-row items-center justify-center h-full px-8">
+
+                            <div
+                                class="w-full md:w-2/5 h-28 rounded md:mr-4 bg-white border border-gray-200 shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center flex flex-col justify-center items-center md:px-6 px-1 mb-3 md:mb-0">
+                                <p class="italic font-medium">"This tool is incredibly intuitive and has made managing
+                                    my contacts a breeze!"</p>
+                                <p class="font-semibold">- Emily Davis</p>
+                            </div>
+
+                            <div
+                                class="w-full md:w-2/5 h-28 rounded md:mr-4 bg-white border border-gray-200 shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 text-center flex flex-col justify-center items-center md:px-6 px-1 mb-3 md:mb-0">
+                                <p class="italic font-medium">"This app is incredibly user-friendly and has made my life
+                                    so much easier!"</p>
+                                <p class="font-semibold">- Sarah Wilson</p>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+        </section>
+
+        <!-- get in touch (contact us) -->
+        <section id="contactUs" class="bg-gray-400 dark:bg-gray-800 pt-8 pb-8">
+            <h3 class="text-2xl font-extrabold text-center mb-4">Get In Touch</h3>
+            <div class="w-10/12 md:w-1/3 pt-6 pb-6 rounded-lg mx-auto bg-gray-100 dark:bg-gray-900">
+                <form action="" method="post" class="flex justify-center flex-col px-6">
+                    <input type="text" name="name" id="name" placeholder="Enter your name"
+                        class="pl-2 mb-3 md:mb-4 text-black rounded-sm h-8">
+                    <input type="text" name="email" id="email" placeholder="Enter your email"
+                        class="pl-2 mb-3 md:mb-4 text-black rounded-sm h-8">
+                    <input type="text" name="contact_number" id="contact_number" placeholder="Enter your contact number"
+                        class="pl-2 mb-3 md:mb-4 text-black rounded-sm h-8">
+                    <textarea name="feedback" id="feedback" cols="60" class="pl-2 mb-4 text-black rounded-sm"
+                        placeholder="Write your feedback here."></textarea>
+                    <button class="bg-white  px-4 py-2 rounded-full text-sm text-black font-semibold"
+                        type="submit">Submit</button>
+                </form>
+            </div>
+        </section>
+
+        <!-- footer -->
+        <section id="footer">
+        <div class="bg-gray-800 dark:bg-gray-900 text-white py-6">
+            <div class="container mx-auto px-4">
+                <div class="flex flex-col md:flex-row justify-between items-center">
+                    <div class="mb-4 md:mb-0">
+                        <h4 class="text-lg font-semibold">Contact Manager</h4>
+                        <p class="text-sm">Effortlessly manage your contacts in one place.</p>
+                    </div>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-blue-400 mr-0"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-blue-400"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="text-white hover:text-blue-400"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="text-white hover:text-blue-400"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="text-center mt-4">
+                    <p class="text-sm">&copy; 2023 Contact Manager. All rights reserved.</p>
+                </div>
+            </div>
+        </div>
+        </section>
+    </div>
+</body>
+
+</html>

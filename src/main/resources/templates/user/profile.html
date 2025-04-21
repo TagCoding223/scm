@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" th:replace="~{base :: parent(~{::title},~{::#main},~{})}">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+</head>
+
+<body>
+    <div id="main">
+        <div data-th-replace="~{/user/sidebar :: sidebar}"></div>
+
+        <div class="sm:pl-60 pt-20" style="height: 1000px;">
+            <div class="flex flex-col justify-center items-center md:pt-5">
+
+                <!-- card body -->
+                <div data-th-object="${loggedInUser}"
+                    class="block w-full max-w-2xl p-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:bg-gray-100 dark:bg-gray-800 dark:border-gray-700 dark:hover:bg-gray-700 ">
+
+                    <!-- card content body -->
+                    <div class="flex flex-col items-center justify-center">
+
+                        <!-- profile pic -->
+                        <img data-th-src="@{*{profilePic}}" data-th-onerror="this.src='/images/default_profile_pic.svg'"
+                            alt="Profile Pic" class="h-32 w-32 rounded-full">
+
+                        <!-- User name -->
+                        <h5 class="mb-2 text-2xl font-bold tracking-tight text-gray-900 dark:text-white"
+                            data-th-text="*{name}">User Name</h5>
+
+                        <!-- email -->
+                        <p class="font-normal text-gray-700 dark:text-gray-400" data-th-text="*{email}">Email</p>
+
+                        <!-- phone number -->
+                        <p class="font-normal text-gray-700 dark:text-gray-400" data-th-text="*{phoneNumber}">Phone
+                            Number</p>
+
+                        <!-- about -->
+                        <p class="font-normal text-gray-700 dark:text-gray-400" data-th-text="*{about}">About</p>
+
+                        <!-- verification status -->
+                        <div class="flex w-full justify-between">
+                            <!-- email -->
+                            <p class="font-normal text-gray-700 dark:text-gray-400">Email Verified: 
+                                <span data-th-text="*{emailVerified ? 'YES' : 'NO'}" class="font-medium text-gray-400"></span>
+                            </p>
+                            
+                            <!-- phone number  -->
+                            <p class="font-normal text-gray-700 dark:text-gray-400">Phone Verified: <span data-th-text="*{phoneVerified ? 'YES' : 'NO'}" class="font-medium text-gray-400"></span></p> 
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
